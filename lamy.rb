@@ -5,21 +5,21 @@
 class Lamy < Formula
   desc "A CLI tool that asks a series of questions to clarify what you want to know."
   homepage "https://github.com/akihisa1210/lamy"
-  version "1.2.1"
+  version "2.0.0"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/akihisa1210/lamy/releases/download/v1.2.1/lamy_1.2.1_macOS_x86_64.zip"
-      sha256 "1c3d6b78c7813268bee80f15cb49a084502821b29b26b8cfe442a9bd9dea7b4d"
+      url "https://github.com/akihisa1210/lamy/releases/download/v2.0.0/lamy_2.0.0_macOS_x86_64.zip"
+      sha256 "1870b6dbf3b4e0459a1797f3fbded6d40714b05bb57eacfbab851ccd7c4cb602"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/akihisa1210/lamy/releases/download/v1.2.1/lamy_1.2.1_linux_x86_64.zip"
-      sha256 "7dc637e8429c19f5f2e0cff9067ed271c5edd2cfd58ecd3a6f56f7a5390282bb"
+      url "https://github.com/akihisa1210/lamy/releases/download/v2.0.0/lamy_2.0.0_linux_x86_64.zip"
+      sha256 "dffd979efa16529ea666982270389528f74996850bae110662e1aba0b109e3f0"
     end
   end
 
