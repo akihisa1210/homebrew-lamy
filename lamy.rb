@@ -5,25 +5,28 @@
 class Lamy < Formula
   desc "A CLI tool that asks a series of questions to clarify what you want to know."
   homepage "https://github.com/akihisa1210/lamy"
-  version "2.0.0"
+  version "2.0.1"
   license "Apache-2.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/akihisa1210/lamy/releases/download/v2.0.0/lamy_2.0.0_macOS_x86_64.zip"
-      sha256 "1870b6dbf3b4e0459a1797f3fbded6d40714b05bb57eacfbab851ccd7c4cb602"
+      url "https://github.com/akihisa1210/lamy/releases/download/v2.0.1/lamy_2.0.1_macOS_x86_64.zip"
+      sha256 "badb996270962e7c9582f4bade7b60d5733cc2ffb8d34f31cf927a5e443ed735"
+
+      def install
+        bin.install "lamy"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/akihisa1210/lamy/releases/download/v2.0.0/lamy_2.0.0_linux_x86_64.zip"
-      sha256 "dffd979efa16529ea666982270389528f74996850bae110662e1aba0b109e3f0"
-    end
-  end
+      url "https://github.com/akihisa1210/lamy/releases/download/v2.0.1/lamy_2.0.1_linux_x86_64.zip"
+      sha256 "ff718da1b92eb82190008bd00decc4b5ea46ac122a5c1b7e9800fdbd2f23e552"
 
-  def install
-    bin.install "lamy"
+      def install
+        bin.install "lamy"
+      end
+    end
   end
 end
